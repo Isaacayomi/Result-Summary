@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size:18px;
+}
+
+.container{
+    max-width:430px;
+    margin:auto;
+}
+
+.upper-container{
+    padding:1.3rem;
+    background-image: linear-gradient(180deg,hsla(252, 100%, 67%, 0.931),hsla(241, 81%, 54%, 0.979)  );
+    border-radius:0 0 1.7rem 1.7rem;
+}
+
+.upper-container p:nth-child(1){
+    color:hsl(241, 100%, 89%);
+    text-align:center;
+    margin-bottom:1.5rem;
+}
+
+.circle{
+    border-radius:100%;
+    height:140px;
+    width:140px;
+    margin:auto;
+    background-image:linear-gradient(to bottom,hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0) )
+}
+
+.upper-container h1{
+    text-align:center;
+    font-size:3.5rem;
+    color:white;
+    padding-top:0.8rem;
+}
+
+.result-total{
+    text-align:center;
+    font-size:0.9rem;
+    margin-top:-1.8rem;
+    color:hsl(241, 100%, 89%);
+}
+
+.comment{
+    color:white;
+    font-weight:bold;
+    font-size:1.2rem;
+    text-align:center;
+    margin-top:1.2rem;
+    letter-spacing:0.1rem;
+}
+
+.upper-container p:nth-child(4){
+    text-align:center;
+    color:hsl(241, 100%, 89%);
+    font-weight:lighter;
+    max-width:90%;
+    margin-inline:auto;
+    font-size:0.9rem;
+    margin-top:0.6rem;
+    padding-bottom:1rem;
+}
+
+.lower-container{
+    padding-inline:1.7rem;
+    padding-block:1rem;
+}
+
+.lower-container .sub-heading{
+    color:#3f4853;
+    font-weight:bolder;
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+    font-size:1.15rem;
+}
+
+.reaction, .memory, .verbal, .visual{
+    display:flex;
+    align-items: center;
+    gap:0.8rem;   
+}
+
+.flex-container{
+    display:flex;
+    align-items: center;
+    gap:5rem;
+    padding:1rem;
+}
+
+.reaction-container{
+    background-color:hsla(0, 100%, 73%, 0.069);
+    border-radius:0.5rem;
+    margin-top:1rem;
+    padding-left:2rem;
+}
+
+.reaction p{
+    color:hsl(0, 100%, 73%);
+    font-weight:bold;
+    font-size:1rem;
+    margin-right:-1rem;
+}
+
+.memory-container{
+    background-color:hsla(39, 100%, 56%, 0.069);
+    border-radius:0.5rem;
+    margin-top:1rem;
+    padding-left:2rem;
+}
+
+.memory p{
+    color:hsl(39, 100%, 56%);
+    font-weight:bold;
+    font-size:1rem;
+    margin-right:-1rem;
+}
+
+.verbal-container{
+    background-color: hsla(166, 100%, 37%, 0.069);
+    border-radius:0.5rem;
+    margin-top:1rem;
+    padding-left:2rem;
+}
+
+.verbal p{
+    color: hsl(166, 100%, 37%);
+    font-weight:bold;
+    font-size:1rem;
+}
+
+.visual-container{
+    background-color: hsla(234, 85%, 45%, 0.069);
+    border-radius:0.5rem;
+    margin-top:1rem;
+    padding-left:2.3rem;
+}
+
+.visual p{
+    color: hsl(234, 85%, 45%);
+    font-weight:bold;
+    font-size:1rem;
+}
+
+.score{
+    font-weight:bold;
+    color:hsl(224, 30%, 27%);
+}
+
+.overall{
+    color:hsl(241, 100%, 89%);
+}
+
+button{
+    display:block;
+    margin-top:1.5rem;
+    margin-inline:auto;
+    width:100%;
+    padding:0.7rem;
+    border-radius:3rem;
+    border:none;
+    background-color:#303B59;
+    color:white;
+    font-size:1.1rem;
+}
+
+button:active{
+    background-image: linear-gradient(180deg,hsla(252, 100%, 67%, 0.931),hsla(241, 81%, 54%, 0.979)  );
+    cursor:pointer;
+    transition:1s;
+}
+
+.footer { 
+    font-size: 11px; 
+    text-align: center; 
+}
+    .footer a { 
+        font-size: 11px;
+        color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width:768px) {
+    main{
+        padding:1.5rem;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        min-width:650px;
+        min-height:100vh;
+    }
+
+    .upper-container{
+        border-radius:1.7rem;
+        max-width:300px;
+        height:400px;
+        display:grid;
+        place-content: center;
+    }
+
+    .lower-container{
+        min-width:300px;
+        box-shadow:10px 11px 15px 3px #E9EFFB;
+        border-radius:0 1.7rem 1.7rem 0;
+    }
+
+    .flex-container{
+        padding:0.7rem;
+        gap:3rem;
+    }
+
+    button{
+        padding:0.5rem;
+    }
+
+    .footer { 
+        font-size: 11px; 
+        text-align: center; 
+        margin-top:-6rem;
+    }
+}
